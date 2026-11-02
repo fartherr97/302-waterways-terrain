@@ -13,3 +13,13 @@ at `https://fartherr97.github.io/302-waterways-terrain/`.
   each row delta-coded (first value absolute), little-endian, gzip.
 
 Built by `scripts/engine3d/bake_terrain.py` in the app repository.
+
+## More sets
+
+The rest of the Atlantic coast is in other repositories, listed in `sets.json`
+(`{ sets: [{ name, url, core: [w, s, e, n] }] }`): the app fetches a tile from the set
+whose `core` holds the middle of its zoom-10 tile (falling back to this one), and merges
+their `index.json`s with this one's.
+
+- `302-waterways-terrain-north`: north of 39.1°N (northern New Jersey to Maine)
+- `302-waterways-terrain-south`: south of 39.1°N (Virginia to Florida's Atlantic side and the Keys)
