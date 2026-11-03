@@ -5,7 +5,7 @@
    "url": "https://fartherr97.github.io/302-waterways-terrain-north/",
    "core": [
     -180.0,
-    39.1,
+    33.1,
     180.0,
     90.0
    ]
@@ -17,7 +17,7 @@
     -180.0,
     -90.0,
     180.0,
-    39.1
+    33.1
    ]
   }
  ]

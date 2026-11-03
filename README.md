@@ -23,3 +23,12 @@ their `index.json`s with this one's.
 
 - `302-waterways-terrain-north`: north of 39.1°N (northern New Jersey to Maine)
 - `302-waterways-terrain-south`: south of 39.1°N (Virginia to Florida's Atlantic side and the Keys)
+
+
+## The sets (November 2026)
+
+`sets.json` splits the rest of the coast at 33.1°N: north of it (Maine to the Carolinas) is
+`302-waterways-terrain-north`, south of it (the lower Carolinas, Georgia and all of Florida,
+Atlantic and Gulf) is `302-waterways-terrain-south`. Florida's tiles are NOAA NCEI CUDEM 1/9"
+where it reaches, over NOAA Office of Coast Survey BlueTopo (the water) and USGS 3DEP 1/3"
+(the land): data derived from NOAA Office of Coast Survey BlueTopo, all public domain.
