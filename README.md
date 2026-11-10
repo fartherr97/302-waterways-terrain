@@ -32,3 +32,20 @@ their `index.json`s with this one's.
 Atlantic and Gulf) is `302-waterways-terrain-south`. Florida's tiles are NOAA NCEI CUDEM 1/9"
 where it reaches, over NOAA Office of Coast Survey BlueTopo (the water) and USGS 3DEP 1/3"
 (the land): data derived from NOAA Office of Coast Survey BlueTopo, all public domain.
+
+## The Gulf of America (November 2026)
+
+The Gulf coast west of Florida (Perdido Bay to the Rio Grande: Alabama, Mississippi,
+Louisiana, Texas) is in this set itself, alongside the first region: zoom-10 tiles whose
+middle is west of 87.7°W, baked by `bake_florida.py --region gulf` from the same sources as
+Florida's (NOAA NCEI CUDEM 1/9" where it reaches, NOAA Office of Coast Survey BlueTopo for the
+water, USGS 3DEP 1/3" for the land; data derived from NOAA Office of Coast Survey BlueTopo).
+
+## The lakes
+
+The lakes are tiles of their own, in a `lakes/` folder of this repository and of the -north and
+-south ones, listed under `lakes` in `sets.json` (an app from before lakes reads only `sets`, so it
+never takes them). Each lake is carved under its own water: USGS 3DEP 1/3" for the land, the lake
+bottom from a published survey where there is one (NOAA NCEI Great Lakes bathymetry, USGS and
+Reclamation surveys, the Texas Water Development Board's), else modeled from the shore out to the
+lake's typical depth (drawn, not measured: the app says so). Built by `bake_lakes.py`.
