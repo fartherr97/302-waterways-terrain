@@ -46,6 +46,17 @@ water, USGS 3DEP 1/3" for the land; data derived from NOAA Office of Coast Surve
 The lakes are tiles of their own, in a `lakes/` folder of this repository and of the -north and
 -south ones, listed under `lakes` in `sets.json` (an app from before lakes reads only `sets`, so it
 never takes them). Each lake is carved under its own water: USGS 3DEP 1/3" for the land, the lake
-bottom from a published survey where there is one (NOAA NCEI Great Lakes bathymetry, USGS and
-Reclamation surveys, the Texas Water Development Board's), else modeled from the shore out to the
-lake's typical depth (drawn, not measured: the app says so). Built by `bake_lakes.py`.
+bottom from a published survey where there is one, else modeled from the shore out to the lake's
+typical depth (drawn, not measured: the app says so, and Safe Route doesn't hold a boat to it).
+Built by `lake_surveys.py` and `bake_lakes.py` in the app's repository; each lake's grade and source
+are in the app's `lake-water.json`.
+
+Lake bottoms from (with the credit each asks for):
+- U.S. Geological Survey, NOAA (NCEI Great Lakes bathymetry, Electronic Navigational Charts,
+  BlueTopo), Bureau of Reclamation: public domain. Lake Mead: USGS and the Bureau of Reclamation.
+- Texas Water Development Board volumetric surveys (credit: Texas Water Development Board).
+- St. Johns River Water Management District; Ohio DNR Division of Wildlife; NYS Department of
+  Environmental Conservation; MassGIS and MassWildlife (public records, provided as is).
+- CT DEEP lake bathymetry contours (CC0).
+- NH Department of Environmental Services lake bathymetry (credit: NHDES; a rough estimate, not for
+  navigation: shown in 3D only).

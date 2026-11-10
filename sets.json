@@ -20,5 +20,19 @@
     33.1
    ]
   }
+ ],
+ "lakes": [
+  {
+   "name": "lakes-north",
+   "url": "https://fartherr97.github.io/302-waterways-terrain-north/lakes/"
+  },
+  {
+   "name": "lakes-south",
+   "url": "https://fartherr97.github.io/302-waterways-terrain-south/lakes/"
+  },
+  {
+   "name": "lakes-first",
+   "url": "https://fartherr97.github.io/302-waterways-terrain/lakes/"
+  }
  ]
 }
